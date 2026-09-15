@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>轻量饮食记录 · 预发报名</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,-apple-system,sans-serif}
+body{background:#F5F7FA;color:#1A1A2E;min-height:100vh;padding:20px 16px;display:flex;justify-content:center}
+.wrap{max-width:560px;width:100%}
+.hero{background:linear-gradient(135deg,#2D8B46,#1E6B35);color:#fff;border-radius:16px;padding:28px 24px;margin-bottom:16px}
+.hero h1{font-size:22px;font-weight:700;margin-bottom:6px}
+.hero p{font-size:13px;opacity:0.9;line-height:1.6}
+.hero .badge{display:inline-block;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:20px;font-size:11px;margin-top:10px}
+.hero .anti{font-size:12px;opacity:0.85;margin-top:8px;line-height:1.6}
+.hero .anti span{display:inline-block;margin-right:6px}
+.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.card h2{font-size:16px;margin-bottom:12px;color:#2D8B46}
+.card h3{font-size:13px;margin:14px 0 8px;color:#374151}
+.feature{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #F3F4F6;font-size:13px}
+.feature:last-child{border-bottom:none}
+.feature .icon{font-size:16px;flex-shrink:0}
+.feature .desc{line-height:1.5}
+.feature .tag{display:inline-block;background:#E8F5E9;color:#2D8B46;font-size:9px;padding:1px 6px;border-radius:8px;margin-left:4px}
+.roadmap .step{display:flex;gap:10px;padding:6px 0;font-size:12px;color:#6B7280;align-items:baseline}
+.roadmap .step .n{background:#2D8B46;color:#fff;width:18px;height:18px;border-radius:50%;text-align:center;font-size:10px;line-height:18px;flex-shrink:0}
+.roadmap .step .future{font-size:10px;color:#9CA3AF;margin-left:4px}
+.price-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.price-box{border:1.5px solid #E5E7EB;border-radius:8px;padding:12px 8px;text-align:center;cursor:pointer;transition:all .2s}
+.price-box:hover{border-color:#2D8B46}
+.price-box.selected{border-color:#2D8B46;background:#E8F5E9}
+.price-box .p{font-size:18px;font-weight:700;color:#2D8B46}
+.price-box .pl{font-size:11px;color:#6B7280;margin-top:2px}
+.price-box .pm{font-size:10px;color:#9CA3AF;margin-top:4px}
+.other-choice{display:block;width:100%;text-align:center;padding:10px;margin-top:8px;border:1.5px dashed #E5E7EB;border-radius:8px;font-size:12px;color:#6B7280;cursor:pointer;background:#FAFAFA}
+.other-choice:hover{border-color:#2D8B46}
+.other-choice input{display:none}
+.oc-label{display:block}
+.oc-custom{display:none;margin-top:6px}
+.oc-custom input{width:100%;padding:6px;border:1.5px solid #E5E7EB;border-radius:6px;font-size:12px;text-align:center}
+.form-row{margin-bottom:12px}
+.form-row label{display:block;font-size:12px;color:#374151;margin-bottom:4px}
+.form-row input{width:100%;padding:10px;border:1.5px solid #E5E7EB;border-radius:8px;font-size:13px;outline:none}
+.form-row input:focus{border-color:#2D8B46}
+.checkbox-row{display:flex;align-items:center;gap:8px;font-size:12px;color:#6B7280;margin-bottom:12px}
+.checkbox-row input{width:16px;height:16px}
+.submit{width:100%;padding:14px;background:#2D8B46;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
+.submit:hover{background:#1E6B35}
+.submit:disabled{background:#9CA3AF;cursor:not-allowed}
+.note{font-size:11px;color:#9CA3AF;text-align:center;margin-top:10px;line-height:1.6}
+.hidden{display:none}
+.success{text-align:center;padding:30px 20px}
+.success .big{font-size:40px;margin-bottom:10px}
+.success h2{color:#2D8B46;margin-bottom:8px}
+.success p{font-size:13px;color:#6B7280;line-height:1.7}
+.principle{font-size:12px;color:#6B7280;line-height:1.8;padding:12px;background:#FAFAFA;border-radius:8px;margin-top:10px}
+.principle b{color:#374151}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div id="pageForm">
+    <div class="hero">
+      <h1>🍱 轻量饮食 + 训练记录</h1>
+      <p>目标管理 · 饮食打卡 · 训练记录 · AI 复盘。四个模块，没了。</p>
+      <div class="anti">
+        <span>🚫 不卖课</span><span>🚫 不卖代餐</span><span>🚫 不做社区</span><span>🚫 不塞广告</span>
+      </div>
+      <span class="badge">📱 预发 · 限量体验</span>
+    </div>
+
+    <div class="card">
+      <h2>为什么做这个</h2>
+      <div class="principle">
+        用过 Keep、薄荷的人都知道：打开就是商城、弹窗卖课、社区动态刷屏。你只是想记个饭，得先划走一堆东西。<br><br>
+        <b>这个产品不干那些事。</b><br><br>
+        打开 → 记录 → 看趋势 → AI 告诉你接下来怎么办 → 关掉。整个过程不超过 3 分钟。<br><br>
+        不社交、不卖货、不卖课。你付费解锁功能，我给你一个干净的工具。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>四个模块，不贪多</h2>
+      <div class="feature"><span class="icon">🎯</span><div class="desc"><b>目标管理</b> — 多阶段目标，减脂/增肌/维持随意切换，全程可追踪、可复盘、可调整 <span class="tag">已上线</span></div></div>
+      <div class="feature"><span class="icon">🥗</span><div class="desc"><b>饮食记录</b> — 三餐打卡，自动算热量/碳水/蛋白/脂肪，自定义食物库 <span class="tag">已上线</span></div></div>
+      <div class="feature"><span class="icon">⚖️</span><div class="desc"><b>体重体脂</b> — 每天打卡，趋势图可视化，目标进度自动计算 <span class="tag">已上线</span></div></div>
+      <div class="feature"><span class="icon">💪</span><div class="desc"><b>训练记录</b> — 动作/组数/重量/次数，和饮食并列，不绑课程 <span class="tag">开发中</span></div></div>
+      <div class="feature"><span class="icon">🤖</span><div class="desc"><b>AI 复盘</b> — 每周/每阶段自动分析你的饮食+训练+体重，告诉你做得好的、做得差的、下一步建议 <span class="tag">规划中</span></div></div>
+      <div class="feature"><span class="icon">📚</span><div class="desc"><b>教学视频</b> — 精选动作教学和饮食科普，不卖课，只放有用的 <span class="tag">规划中</span></div></div>
+    </div>
+
+    <div class="card">
+      <h2>路线图</h2>
+      <div class="roadmap">
+        <div class="step"><span class="n">1</span>饮食 + 体重 + 目标管理 <span class="future">← 当前版本，已可用</span></div>
+        <div class="step"><span class="n">2</span>训练记录模块（动作/组数/重量）</div>
+        <div class="step"><span class="n">3</span>AI 复盘（饮食+训练+体重联动分析）</div>
+        <div class="step"><span class="n">4</span>教学视频（精选内容，非自研）</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 预发问卷</h2>
+      <p style="font-size:12px;color:#6B7280;margin-bottom:14px;">填一下，帮我决定先做哪些功能、定什么价。填表即获得首批体验资格。</p>
+
+      <div class="form-row">
+        <label>怎么称呼你 *</label>
+        <input type="text" id="name" placeholder="你的昵称" />
+      </div>
+      <div class="form-row">
+        <label>联系方式（微信 / 邮箱）*</label>
+        <input type="text" id="contact" placeholder="方便你获得体验资格时联系你" />
+      </div>
+
+      <h3>你愿意为这套工具付多少？*</h3>
+      <div class="price-grid" id="priceGrid">
+        <div class="price-box" data-price="¥9.9/月"><div class="p">¥9.9</div><div class="pl">按月</div><div class="pm">随时取消</div></div>
+        <div class="price-box" data-price="¥59/年"><div class="p">¥59</div><div class="pl">按年</div><div class="pm">约¥5/月</div></div>
+        <div class="price-box" data-price="¥99/终身"><div class="p">¥99</div><div class="pl">一次性</div><div class="pm">永久使用</div></div>
+      </div>
+      <label class="other-choice">
+        <input type="radio" name="price" id="priceOther">
+        <span class="oc-label">💡 其他想法，我自己填个价</span>
+        <span class="oc-custom"><input type="text" id="priceOtherValue" placeholder="输入你觉得合理的价格" /></span>
+      </label>
+
+      <h3>你最想要下面哪个功能先上线？*</h3>
+      <div id="featGrid" style="display:flex;flex-direction:column;gap:8px;">
+        <label class="checkbox-row"><input type="checkbox" class="feat" value="训练记录"> 💪 训练记录（动作/组数/重量/次数）</label>
+        <label class="checkbox-row"><input type="checkbox" class="feat" value="AI复盘"> 🤖 AI 复盘（每周自动分析饮食+训练+体重）</label>
+        <label class="checkbox-row"><input type="checkbox" class="feat" value="多阶段目标"> 🎯 多阶段目标（减脂/增肌/维持切换，全程追踪）</label>
+        <label class="checkbox-row"><input type="checkbox" class="feat" value="教学视频"> 📚 教学视频（动作教学 + 饮食科普）</label>
+        <label class="checkbox-row"><input type="checkbox" class="feat" value="数据导出"> 📤 数据导出 Excel / 阶段报告</label>
+      </div>
+
+      <button class="submit" id="submitBtn" disabled>提交问卷，抢占体验名额</button>
+      <div class="note">提交即代表你同意我们使用该信息联系你。<br>预发阶段完全免费，不会自动扣费。</div>
+    </div>
+  </div>
+
+  <div id="pageSuccess" class="card hidden" style="margin-top:60px;">
+    <div class="success">
+      <div class="big">🎉</div>
+      <h2>提交成功！</h2>
+      <p>感谢你的反馈。<br><br>我们会按你的选择优先开发。<br>体验名额准备好后，会通过你留的联系方式通知你。<br><br>到时见！</p>
+    </div>
+  </div>
+
+</div>
+<script>
+let selectedPrice=null;
+const priceGrid=document.getElementById('priceGrid');
+priceGrid.addEventListener('click',function(e){
+  const box=e.target.closest('.price-box');if(!box)return;
+  priceGrid.querySelectorAll('.price-box').forEach(b=>b.classList.remove('selected'));
+  box.classList.add('selected');selectedPrice=box.dataset.price;
+  document.getElementById('priceOther').checked=false;
+  document.getElementById('priceOtherValue').value='';validate();
+});
+document.getElementById('priceOther').addEventListener('change',function(){
+  if(this.checked){selectedPrice=null;priceGrid.querySelectorAll('.price-box').forEach(b=>b.classList.remove('selected'));}validate();
+});
+document.getElementById('priceOtherValue').addEventListener('input',validate);
+document.querySelectorAll('.feat').forEach(f=>f.addEventListener('change',validate));
+function validate(){
+  const name=document.getElementById('name').value.trim();
+  const contact=document.getElementById('contact').value.trim();
+  const priceOk=selectedPrice||(document.getElementById('priceOther').checked&&document.getElementById('priceOtherValue').value.trim());
+  const featOk=document.querySelectorAll('.feat:checked').length>0;
+  document.getElementById('submitBtn').disabled=!(name&&contact&&priceOk&&featOk);
+}
+function submitForm(){
+  const name=document.getElementById('name').value.trim();
+  const contact=document.getElementById('contact').value.trim();
+  const price=selectedPrice||('自定义:'+document.getElementById('priceOtherValue').value.trim());
+  const feats=Array.from(document.querySelectorAll('.feat:checked')).map(f=>f.value);
+  const payload={name,contact,price,feats,time:new Date().toISOString()};
+  console.log('报名数据:',payload);
+  document.getElementById('pageForm').classList.add('hidden');
+  document.getElementById('pageSuccess').classList.remove('hidden');
+}
+document.getElementById('submitBtn').addEventListener('click',submitForm);
+</script>
+</body>
+</html>
